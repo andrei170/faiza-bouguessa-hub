@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AG1 Consulting | Built For Faiza Bouguessa</title>
+<meta property="og:type" content="website">
+<meta property="og:title" content="Built for Faiza Bouguessa, by AG1 Consulting">
+<meta property="og:description" content="An owned-audience engine for BOUGUESSA: capture, nurture, and return. Built before we ever get on a call.">
+<meta property="og:url" content="https://andrei170.github.io/faiza-bouguessa-hub/">
+<meta property="og:image" content="https://andrei170.github.io/faiza-bouguessa-hub/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Built for Faiza Bouguessa, by AG1 Consulting">
+<meta name="twitter:description" content="An owned-audience engine for BOUGUESSA: capture, nurture, and return.">
+<meta name="twitter:image" content="https://andrei170.github.io/faiza-bouguessa-hub/og-image.png">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🧵&lt;/text&gt;&lt;/svg&gt;">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --black: #000000; --surface: #0A0A0F;
+    --gold-1: #D4A84B; --gold-2: #B8922E; --gold-flat: #C9973A;
+    --white: #FFFFFF; --muted: #9A9AA5; --border: rgba(255,255,255,0.10);
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter','Open Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background: var(--black); color: var(--white); line-height: 1.6; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  .gold-text { background: linear-gradient(135deg, var(--gold-1), var(--gold-2)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 22px; }
+  nav { position: sticky; top: 0; z-index: 50; background: rgba(0,0,0,0.72); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; padding: 16px 22px; max-width: 1080px; margin: 0 auto; }
+  .wordmark { font-weight: 800; font-size: 1.3rem; letter-spacing: 0.5px; }
+  .wordmark .ag { background: linear-gradient(135deg, var(--gold-1), var(--gold-2)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .wordmark .co { color: var(--white); font-weight: 800; }
+  .nav-cta { font-size: 0.82rem; font-weight: 700; text-decoration: none; color: var(--black); background: linear-gradient(135deg, var(--gold-1), var(--gold-2)); padding: 9px 18px; border-radius: 40px; white-space: nowrap; }
+  header.hero { padding: 90px 0 70px; text-align: center; position: relative; background: radial-gradient(circle at 50% 0%, rgba(201,151,58,0.10), transparent 55%); }
+  .badge { display: inline-block; font-size: 0.74rem; font-weight: 700; letter-spacing: 1.6px; text-transform: uppercase; color: var(--gold-flat); border: 1px solid rgba(201,151,58,0.4); border-radius: 40px; padding: 8px 18px; margin-bottom: 30px; }
+  .brand-row { display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 26px; }
+  .brand-block { font-weight: 800; font-size: 1.8rem; letter-spacing: 0.5px; }
+  .brand-x { color: var(--muted); font-size: 1.4rem; font-weight: 400; }
+  header.hero h1 { font-size: clamp(1.9rem, 5vw, 3rem); font-weight: 800; line-height: 1.12; margin-bottom: 20px; }
+  header.hero p.sub { color: var(--muted); font-size: 1.1rem; max-width: 640px; margin: 0 auto; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 34px 18px; margin: 50px 0; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .stat { text-align: center; }
+  .stat .num { font-size: clamp(1.8rem, 5vw, 2.6rem); font-weight: 800; line-height: 1; }
+  .stat .label { font-size: 0.82rem; color: var(--muted); margin-top: 10px; letter-spacing: 0.4px; }
+  .sec-head { text-align: center; margin: 70px 0 36px; }
+  .sec-head .eyebrow { font-size: 0.74rem; font-weight: 700; letter-spacing: 1.8px; text-transform: uppercase; color: var(--gold-flat); }
+  .sec-head h2 { font-size: clamp(1.5rem, 4vw, 2.1rem); font-weight: 800; margin-top: 12px; }
+  .acc { display: flex; flex-direction: column; gap: 16px; }
+  .card { background: rgba(10,10,15,0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--border); border-radius: 16px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0,0.45); }
+  .acc-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 24px; cursor: pointer; user-select: none; }
+  .acc-head .left { display: flex; align-items: center; gap: 16px; }
+  .acc-num { flex-shrink: 0; width: 38px; height: 38px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 0.95rem; color: var(--black); background: linear-gradient(135deg, var(--gold-1), var(--gold-2)); }
+  .acc-head h3 { font-size: 1.08rem; font-weight: 800; }
+  .acc-icon { flex-shrink: 0; color: var(--gold-flat); font-size: 1.5rem; transition: transform 0.35s ease; line-height: 1; }
+  .card.open .acc-icon { transform: rotate(45deg); }
+  .acc-body { max-height: 0; overflow: hidden; transition: max-height 0.45s ease; }
+  .acc-inner { padding: 0 24px 26px; color: #D7D7DE; }
+  .acc-inner p { margin-bottom: 14px; }
+  .acc-inner p:last-child { margin-bottom: 0; }
+  .acc-inner strong { color: var(--white); }
+  .acc-inner .gold-label { color: var(--gold-flat); font-weight: 700; }
+  .item { border-left: 2px solid rgba(201,151,58,0.45); padding: 4px 0 4px 16px; margin-bottom: 18px; }
+  .item:last-child { margin-bottom: 0; }
+  .item .name { font-weight: 800; color: var(--white); display: block; margin-bottom: 4px; }
+  .item .hl { color: #C7C7D0; font-style: italic; }
+  .pill { display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; color: var(--gold-flat); border: 1px solid rgba(201,151,58,0.4); border-radius: 30px; padding: 4px 12px; margin-bottom: 8px; }
+  .stack-list { list-style: none; }
+  .stack-list li { padding: 7px 0 7px 26px; position: relative; border-bottom: 1px solid rgba(255,255,255,0.05); }
+  .stack-list li:last-child { border-bottom: none; }
+  .stack-list li::before { content: "+"; position: absolute; left: 0; color: var(--gold-flat); font-weight: 800; }
+  .btn-link { display: inline-block; margin-top: 16px; text-decoration: none; font-weight: 700; font-size: 0.92rem; color: var(--black); background: linear-gradient(135deg, var(--gold-1), var(--gold-2)); padding: 13px 26px; border-radius: 40px; transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .btn-link:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(201,151,58,0.3); }
+  .process-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  .proc { background: rgba(10,10,15,0.7); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--border); border-radius: 16px; padding: 26px 24px; box-shadow: 0 12px 40px rgba(0,0,0,0.4); }
+  .proc .step { font-size: 0.78rem; font-weight: 800; letter-spacing: 1px; color: var(--gold-flat); margin-bottom: 12px; }
+  .proc h4 { font-size: 1.05rem; font-weight: 800; margin-bottom: 8px; }
+  .proc p { color: var(--muted); font-size: 0.95rem; }
+  .cta-box { text-align: center; margin: 80px 0 60px; padding: 60px 30px; background: var(--surface); border: 1px solid rgba(201,151,58,0.25); border-radius: 22px; background-image: radial-gradient(circle at 50% 0%, rgba(201,151,58,0.12), transparent 60%); box-shadow: 0 24px 70px rgba(0,0,0,0.55); }
+  .cta-box h2 { font-size: clamp(1.7rem, 4.5vw, 2.4rem); font-weight: 800; margin-bottom: 16px; }
+  .cta-box p { color: var(--muted); max-width: 560px; margin: 0 auto 30px; font-size: 1.08rem; }
+  .cta-box .btn-link { font-size: 1.05rem; padding: 16px 38px; margin-top: 0; }
+  footer { text-align: center; padding: 40px 0 60px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--border); }
+  footer .wordmark { font-size: 1.05rem; margin-bottom: 8px; }
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+  .model-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  .model{background:rgba(10,10,15,0.7);border:1px solid var(--border);border-radius:14px;padding:24px 22px;}
+  .model .ic{color:var(--gold-flat);font-weight:800;font-size:0.74rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;display:block;}
+  .model h4{font-size:1rem;font-weight:800;margin-bottom:8px;color:var(--white);}
+  .model p{color:var(--muted);font-size:0.92rem;margin:0;}
+  .scarcity{text-align:center;color:var(--gold-flat);font-weight:700;font-size:0.95rem;margin:28px auto 0;max-width:620px;}
+  .hub-faq{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
+  .hub-faq .qa{background:rgba(10,10,15,0.6);border:1px solid var(--border);border-radius:12px;padding:20px 22px;}
+  .hub-faq .qa h4{font-size:1rem;font-weight:800;color:var(--white);margin-bottom:6px;}
+  .hub-faq .qa p{color:var(--muted);font-size:0.93rem;margin:0;}
+  .sticky-cta{display:none;}
+  @media (max-width:720px){
+    .model-grid{grid-template-columns:1fr;}
+    body{padding-bottom:74px;}
+    .sticky-cta{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(0,0,0,0.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--border);padding:12px 16px;}
+    .sticky-cta a{display:block;width:100%;text-align:center;color:var(--black);background:linear-gradient(135deg,var(--gold-1),var(--gold-2));font-weight:700;padding:14px;border-radius:40px;text-decoration:none;font-size:0.95rem;}
+  }
+  @media (max-width: 720px) { .stats { grid-template-columns: 1fr; gap: 24px; padding: 30px 18px; } .process-grid { grid-template-columns: 1fr; } .nav-cta { display: none; } header.hero { padding: 64px 0 50px; } .brand-block { font-size: 1.4rem; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <div class="wordmark"><span class="ag">AG1</span> <span class="co">CONSULTING</span></div>
+    <a href="https://calendly.com/ag-copy/call-with-andrei" class="nav-cta">Book a Call</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge reveal">Built Exclusively For Faiza Bouguessa</span>
+    <div class="brand-row reveal">
+      <div class="brand-block"><span class="gold-text">AG1</span> <span style="color:var(--white)">CONSULTING</span></div>
+      <span class="brand-x">for</span>
+      <div class="brand-block" style="color:var(--white)">BOUGUESSA</div>
+    </div>
+    <h1 class="reveal">An Owned-Audience Engine,<br><span class="gold-text">Built For Your Brand</span></h1>
+    <p class="sub reveal">The capture, nurture, and retention system that turns a 160K audience and your founder story into an owned list, repeat orders, and a steady wholesale pipeline. Built specifically for BOUGUESSA.</p>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <div class="stats reveal">
+    <div class="stat"><div class="num"><span data-count="7">0</span>+</div><div class="label">Hours of Research</div></div>
+    <div class="stat"><div class="num"><span data-count="7">0</span></div><div class="label">Custom Deliverables</div></div>
+    <div class="stat"><div class="num"><span data-count="2">0</span></div><div class="label">Live Pages</div></div>
+  </div>
+
+  <div class="sec-head reveal">
+    <div class="eyebrow">The Work</div>
+    <h2>Everything We Built For You</h2>
+  </div>
+
+  <div class="acc">
+
+    <!-- 1 RESEARCH -->
+    <div class="card reveal">
+      <div class="acc-head"><div class="left"><div class="acc-num">1</div><h3>Research Snapshot</h3></div><span class="acc-icon">+</span></div>
+      <div class="acc-body"><div class="acc-inner">
+        <p>The brand is done. Roughly 145K on the brand account, another 15K on your personal account, a D3 showroom, a wholesale and press motion, and validation most houses never earn: worn by Beyonce, ranked by Forbes two years running, chosen by Jumeirah for its first hospitality capsule.</p>
+        <p>But the store is purely transactional. A visitor lands, browses, and either buys today or leaves with no warm path back. For a high-consideration luxury piece, most are not ready on the first visit. The attention is there, and almost none of it is owned.</p>
+        <p><span class="gold-label">Three gaps:</span></p>
+        <p>1. No email or SMS capture tied to the audience or the founder story.<br>
+        2. No nurture or retention flows, so first orders and repeat orders are left to chance.<br>
+        3. Wholesale and press interest lands in raw inboxes with no funnel.</p>
+      </div></div>
+    </div>
+
+    <!-- 2 THE SYSTEM -->
+    <div class="card reveal">
+      <div class="acc-head"><div class="left"><div class="acc-num">2</div><h3>The System: The Bouguessa Edit</h3></div><span class="acc-icon">+</span></div>
+      <div class="acc-body"><div class="acc-inner">
+        <p>An <strong>owned-audience engine</strong> built on top of your existing store. The front door is "The Bouguessa Edit": a quietly exclusive early-access list that gives your audience a reason to join, and gives you a channel you own instead of one you rent from an algorithm.</p>
+        <p><span class="gold-label">The promise:</span> turn borrowed attention into an owned list, then turn that list into first orders, repeat orders, and a measured wholesale pipeline. No discounting the brand into the ground.</p>
+        <p><span class="gold-label">The mechanism: Capture, Nurture, Return</span></p>
+        <p>1. Capture the audience into an owned list.<br>2. Nurture with the founder story and the real proof.<br>3. Return them for the second and third order.</p>
+        <p><span class="gold-label">The build:</span></p>
+        <ul class="stack-list">
+          <li>The Bouguessa Edit early-access capture page</li>
+          <li>Email and SMS capture wired into both bios and the store</li>
+          <li>A segmented welcome flow built on your founder story</li>
+          <li>Browse and cart recovery flows</li>
+          <li>Post-purchase, VIP early-access, and win-back flows</li>
+          <li>An on-site proof block from verifiable press only</li>
+          <li>A wholesale and press inquiry funnel</li>
+        </ul>
+        <p style="margin-top:14px;">Built to read like the brand: quiet, considered, never loud.</p>
+      </div></div>
+    </div>
+
+    <!-- 3 ANGLES -->
+    <div class="card reveal">
+      <div class="acc-head"><div class="left"><div class="acc-num">3</div><h3>List-Growth Angles (5)</h3></div><span class="acc-icon">+</span></div>
+      <div class="acc-body"><div class="acc-inner">
+        <div class="item"><span class="name">1. The Edit</span><span class="hl">"Some things should reach you before everyone else."</span></div>
+        <div class="item"><span class="name">2. The Founder Story</span><span class="hl">"Before the brand, there was a grandmother and a sewing machine."</span></div>
+        <div class="item"><span class="name">3. Quiet Power</span><span class="hl">"Strong, but never loud. An audience that gets it."</span></div>
+        <div class="item"><span class="name">4. Worn First</span><span class="hl">"Worn by the women you would expect, before you ever saw it."</span></div>
+        <div class="item"><span class="name">5. For The Wardrobe, Not The Trend</span><span class="hl">"Pieces you return to, not pieces you replace."</span></div>
+      </div></div>
+    </div>
+
+    <!-- 4 FLOW CONCEPTS -->
+    <div class="card reveal">
+      <div class="acc-head"><div class="left"><div class="acc-num">4</div><h3>Email & SMS Flow Concepts (3)</h3></div><span class="acc-icon">+</span></div>
+      <div class="acc-body"><div class="acc-inner">
+        <div class="item"><span class="pill">Welcome</span><p><strong>Trigger:</strong> joins The Bouguessa Edit.</p><p>The founder story, told properly. Then the philosophy: quiet power, designed for the woman no one was thinking about. Then the proof, assembled. Then a first early-access invitation. No discount, no hype.</p></div>
+        <div class="item"><span class="pill">Recovery</span><p><strong>Trigger:</strong> viewed or added a piece, did not buy.</p><p>A quiet, styled reminder with the trust signals close by. The piece, why it was made, how it is worn, and the reassurance a high-consideration buyer needs to commit.</p></div>
+        <div class="item"><span class="pill">Return + VIP</span><p><strong>Trigger:</strong> bought once.</p><p>Post-purchase care and styling, plus a standing VIP early-access position so your best customers see new pieces first. A win-back arm re-engages lapsed buyers in your voice, not with a coupon.</p></div>
+      </div></div>
+    </div>
+
+    <!-- 5 LANDING PAGE -->
+    <div class="card reveal">
+      <div class="acc-head"><div class="left"><div class="acc-num">5</div><h3>Landing Page Preview</h3></div><span class="acc-icon">+</span></div>
+      <div class="acc-body"><div class="acc-inner">
+        <p>A full <strong>Bouguessa Edit</strong> early-access page, designed in your black-and-white editorial brand and built to turn a follower or a first-time visitor into an owned subscriber. It opens on the founder story, carries the quiet-power philosophy, assembles the real press proof, and drives to a single capture: join the Edit.</p>
+        <p>It's live and ready to view right now.</p>
+        <a href="https://andrei170.github.io/faiza-bouguessa-landing/" class="btn-link" target="_blank" rel="noopener">View the live capture page</a>
+      </div></div>
+    </div>
+
+    <!-- 6 PROOF -->
+    <div class="card reveal">
+      <div class="acc-head"><div class="left"><div class="acc-num">6</div><h3>The Proof Block (verifiable only)</h3></div><span class="acc-icon">+</span></div>
+      <div class="acc-body"><div class="acc-inner">
+        <p>The validation is real and documented. The job is to assemble it where a buyer decides, instead of leaving it scattered across press.</p>
+        <div class="item"><span class="name">Worn by Beyonce</span><span class="hl">2017, independently reported. The piece sold out almost instantly.</span></div>
+        <div class="item"><span class="name">Ranked by Forbes</span><span class="hl">Women Behind Middle Eastern Brands, 2021 and 2022.</span></div>
+        <div class="item"><span class="name">Chosen by Jumeirah</span><span class="hl">The Heritage Club capsule, your first hospitality collaboration, 2025.</span></div>
+        <div class="item"><span class="name">Woolmark Prize finalist</span><span class="hl">Press-reported. Real credibility, used with care.</span></div>
+        <p style="margin-top:14px;">No invented customer quotes, no fabricated numbers. Only what is already true.</p>
+      </div></div>
+    </div>
+
+  </div>
+
+  <!-- PROCESS -->
+  <div class="sec-head reveal">
+    <div class="eyebrow">How We Work</div>
+    <h2>Done For You. One Operator.</h2>
+  </div>
+
+  <div class="process-grid">
+    <div class="proc reveal"><div class="step">STEP 01</div><h4>We Build the Capture</h4><p>The Bouguessa Edit page, the email and SMS capture, and the founder-story positioning, wired into both bios and the store.</p></div>
+    <div class="proc reveal"><div class="step">STEP 02</div><h4>We Build the Flows</h4><p>Welcome, browse and cart recovery, post-purchase, VIP, and win-back, all in your voice and your brand.</p></div>
+    <div class="proc reveal"><div class="step">STEP 03</div><h4>We Point Your Audience Into It</h4><p>Your 160K following and your founder story all flow into one path that ends in an owned subscriber, not a closed tab.</p></div>
+    <div class="proc reveal"><div class="step">STEP 04</div><h4>You Design, We Run the Machine</h4><p>You keep building the brand. The list, the flows, and the wholesale funnel keep working and keep getting measured behind you.</p></div>
+  </div>
+
+  <!-- HOW WE'D WORK -->
+  <div class="sec-head reveal">
+    <div class="eyebrow">How We'd Work</div>
+    <h2>Simple Terms. Skin In The Game.</h2>
+  </div>
+  <div class="model-grid">
+    <div class="model reveal"><span class="ic">The model</span><h4>A setup fee, then revenue share</h4><p>A one-time build fee to stand up the system, then a share of the revenue the list and flows generate. Email and SMS revenue is cleanly attributable, so I only win when you win.</p></div>
+    <div class="model reveal"><span class="ic">One operator</span><h4>You deal with me, not a team</h4><p>I build and run the whole machine myself with AI leverage. One point of contact, fast turnaround, nothing lost in handoffs.</p></div>
+    <div class="model reveal"><span class="ic">Proven</span><h4>Over $1M generated in client revenue</h4><p>On the ecommerce side, I have helped grow a brand's email and SMS revenue to seven figures a month, working alongside a partner agency.</p></div>
+  </div>
+  <p class="scarcity reveal">I only take on a handful of clients at a time, so I can stay hands-on with every build.</p>
+
+  <!-- HUB FAQ -->
+  <div class="sec-head reveal">
+    <div class="eyebrow">Straight Answers</div>
+    <h2>What You're Probably Wondering</h2>
+  </div>
+  <div class="hub-faq">
+    <div class="qa reveal"><h4>Will this cheapen the brand?</h4><p>No. This is early-access and story, not a discount engine. The best luxury houses run quiet, disciplined CRM. This is that, in your voice, with your restraint.</p></div>
+    <div class="qa reveal"><h4>How much does this cost?</h4><p>A setup fee plus revenue share, scoped to what we build. We talk real numbers on the call, once I understand your business. No retainer, no surprises.</p></div>
+    <div class="qa reveal"><h4>How fast can you build it?</h4><p>Fast. These pages were built before we ever spoke. A full capture-and-flow system is usually live in a few weeks, not months.</p></div>
+    <div class="qa reveal"><h4>Why revenue share?</h4><p>Because it aligns us. Email and SMS revenue is measurable, so I do not earn the upside unless the system actually makes you money.</p></div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-box reveal">
+    <h2>Ready to build this for real?</h2>
+    <p>Everything above was built specifically for you, Faiza. Imagine it wired into your 160K audience, your founder story, and a list you actually own.</p>
+    <a href="https://calendly.com/ag-copy/call-with-andrei" class="btn-link" target="_blank" rel="noopener">Book a call with Andrei</a>
+    <p style="color:var(--muted);font-size:0.92rem;margin:14px auto 0;text-align:center;">Not ready for a call? Just reply and tell me what you think.</p>
+    <p style="color:var(--gold-flat);font-weight:700;font-size:0.9rem;margin:14px auto 0;text-align:center;letter-spacing:.02em;">Over $1M in client revenue generated. One operator.</p>
+  </div>
+
+</div>
+
+<div class="sticky-cta"><a href="https://calendly.com/ag-copy/call-with-andrei">Book a call with Andrei</a></div>
+
+<footer>
+  <div class="wordmark"><span class="ag gold-text">AG1</span> <span class="co">CONSULTING</span></div>
+  <div>High-ticket offers and marketing systems, done for you.</div>
+  <div style="margin-top:14px;"><a href="https://andrei170.github.io/ag1/" target="_blank" rel="noopener" style="color:var(--gold-flat);text-decoration:none;font-weight:600;font-size:0.9rem;letter-spacing:.02em;">andrei170.github.io/ag1</a></div>
+</footer>
+
+<script>
+  document.querySelectorAll('.acc-head').forEach(function(h){
+    h.addEventListener('click', function(){
+      var card = h.parentElement;
+      var body = card.querySelector('.acc-body');
+      var isOpen = card.classList.contains('open');
+      if (isOpen) { body.style.maxHeight = null; card.classList.remove('open'); }
+      else { card.classList.add('open'); body.style.maxHeight = body.scrollHeight + 'px'; }
+    });
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  function runCount(el){
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var start = null, dur = 1100;
+    function step(ts){ if (!start) start = ts; var p = Math.min((ts - start) / dur, 1); el.textContent = Math.floor(p * target); if (p < 1) requestAnimationFrame(step); else el.textContent = target; }
+    requestAnimationFrame(step);
+  }
+  var countObserved = false;
+  var statObserver = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting && !countObserved){ countObserved = true; document.querySelectorAll('[data-count]').forEach(runCount); } });
+  }, { threshold: 0.4 });
+  var statsEl = document.querySelector('.stats');
+  if (statsEl) statObserver.observe(statsEl);
+</script>
+</body>
+</html>
